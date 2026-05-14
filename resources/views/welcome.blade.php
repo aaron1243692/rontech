@@ -96,37 +96,30 @@
 
                         <div class="offer-grid" data-stagger-group>
                             <article class="offer-card glass-panel" data-stagger-item data-card-hover>
-                                <div class="offer-card__icon"></div>
                                 <h3>Software Development</h3>
                                 <p>Premium design thinking, strong technical execution, and solutions shaped around real business outcomes.</p>
                             </article>
                             <article class="offer-card glass-panel" data-stagger-item data-card-hover>
-                                <div class="offer-card__icon"></div>
                                 <h3>Modern Website Development</h3>
                                 <p>Premium design thinking, strong technical execution, and solutions shaped around real business outcomes.</p>
                             </article>
                             <article class="offer-card glass-panel" data-stagger-item data-card-hover>
-                                <div class="offer-card__icon"></div>
                                 <h3>Animated &amp; Interactive Websites</h3>
                                 <p>Premium design thinking, strong technical execution, and solutions shaped around real business outcomes.</p>
                             </article>
                             <article class="offer-card glass-panel" data-stagger-item data-card-hover>
-                                <div class="offer-card__icon"></div>
                                 <h3>Custom Website Solutions</h3>
                                 <p>Premium design thinking, strong technical execution, and solutions shaped around real business outcomes.</p>
                             </article>
                             <article class="offer-card glass-panel" data-stagger-item data-card-hover>
-                                <div class="offer-card__icon"></div>
                                 <h3>Desktop Applications</h3>
                                 <p>Premium design thinking, strong technical execution, and solutions shaped around real business outcomes.</p>
                             </article>
                             <article class="offer-card glass-panel" data-stagger-item data-card-hover>
-                                <div class="offer-card__icon"></div>
                                 <h3>Mobile Applications</h3>
                                 <p>Premium design thinking, strong technical execution, and solutions shaped around real business outcomes.</p>
                             </article>
                             <article class="offer-card glass-panel" data-stagger-item data-card-hover>
-                                <div class="offer-card__icon"></div>
                                 <h3>Technical Support &amp; Troubleshooting</h3>
                                 <p>Premium design thinking, strong technical execution, and solutions shaped around real business outcomes.</p>
                             </article>
@@ -577,13 +570,16 @@
                                 </label>
                                 <label>
                                     <span>Project Type</span>
-                                    <select name="project_type">
-                                        <option>Software Development</option>
-                                        <option>Website Development</option>
-                                        <option>Business System</option>
-                                        <option>Mobile Application</option>
-                                        <option>Technical Support</option>
-                                    </select>
+                                    <span class="select-shell">
+                                        <select name="project_type" aria-label="Select a project type" required>
+                                            <option value="" selected disabled>Choose a project type</option>
+                                            <option value="software-development">Software Development</option>
+                                            <option value="website-development">Website Development</option>
+                                            <option value="business-system">Business System</option>
+                                            <option value="mobile-application">Mobile Application</option>
+                                            <option value="technical-support">Technical Support</option>
+                                        </select>
+                                    </span>
                                 </label>
                                 <label class="contact-form__full">
                                     <span>Project Details</span>
